@@ -1,0 +1,213 @@
+/*! Footer */
+
+
+/*Footer*/
+
+.main-footer {
+    width: 100%;
+    background-color: #262E3B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 5rem;
+    width: 80%;
+    /*    border-bottom: 1px solid #707070;*/
+}
+
+.footer-1 span {
+    font-size: 3rem;
+    font-family: Cunia;
+    font-weight: bolder;
+    color: white;
+    margin: 1rem auto;
+}
+
+.footer-1 form {
+    width: 90%;
+    height: 3rem;
+    margin: 0 0 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-1 form * {
+    height: 100%;
+    border: none;
+}
+
+.footer-1 form .nl-email {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.5px;
+    outline: none;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.footer-1 form .nl-submit {
+    padding: 0.5rem 1rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    background-color: var(--color-principal);
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+}
+
+
+/*Footer 2*/
+
+.footer-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 3rem;
+    width: 80%;
+}
+
+
+/*Languages*/
+
+.footer-2 .languages {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid #707070;
+    border-top: 1px solid #707070;
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+
+.languages a {
+    color: #708090;
+    text-decoration: none;
+    margin: auto 0.3rem;
+    letter-spacing: 1px
+}
+
+.languages a:hover {
+    color: var(--color-principal);
+}
+
+.languages .lang-activated {
+    color: white;
+}
+
+
+/*Social media icons*/
+
+.social-icons {
+    padding: 0.6rem 0 0.6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: auto 0.3rem;
+    letter-spacing: 1px;
+}
+
+.social-icons i {
+    font-style: normal;
+}
+
+
+/*Footer 3*/
+
+.footer-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-height: 3rem;
+    width: 80%;
+    margin: 1rem 0 3rem;
+}
+
+.footer-3 * {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0.3rem;
+    min-width: 150px
+}
+
+.footer-3 .buy-hanouti {
+    margin: 1rem 0.3rem 1 0;
+}
+
+.footer-3 .customer-serv {
+    margin: 1rem 0 1rem 0.3rem;
+}
+
+.footer-3 span,
+.footer-3 a {
+    color: #708090;
+}
+
+.footer-3 span {
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: white;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-3 a {
+    text-decoration: none;
+    margin: 0.2rem 0;
+    letter-spacing: 0.5px
+}
+
+.footer-3 a:hover,
+.footer-3 a:focus {
+    color: var(--color-principal);
+    text-decoration: underline;
+}
+
+.footer-3 .help {
+    margin: 1rem 0
+}
+
+@media screen and (min-width:1000px) {
+    .footer-1 {
+        flex-direction: row;
+        justify-content: space-between
+    }
+    .footer-1 form {
+        margin: 1rem 0em 1rem 0;
+        width: 100%;
+    }
+    .footer-1 span {
+        color: white;
+        margin: 1rem 2rem 1rem 0;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .footer-2,
+    .footer-3,
+    .footer-1 {
+        max-width: 1300px;
+    }
+    .languages a,
+    .footer-3 a {
+        font-size: 1.5rem;
+    }
+    .footer-3 span {
+        font-size: 1.7rem;
+    }
+}

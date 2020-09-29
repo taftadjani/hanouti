@@ -10,8 +10,7 @@
 
     {{--  Font awesome  --}}
 
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="font-awesome/scss/font-awesome.scss">
+    <link rel="stylesheet" href="font-awesome/css/all.css">
     <script src="assets/js/scripts.js"></script>
 
     {{--  Import fonts  --}}
@@ -30,6 +29,12 @@
 
     {{--  Default style  --}}
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/slide.css">
+    <link rel="stylesheet" href="assets/css/links-1.css">
+    <link rel="stylesheet" href="assets/css/categories-list.css">
+    <link rel="stylesheet" href="assets/css/pop-products.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 
 </head>
 
@@ -39,6 +44,8 @@
     @yield('header')
     @yield('container')
     @yield('footer')
+    <script src="assets/js/headerjs.js"></script>
+    <script src="assets/js/slidejs.js"></script>
 </body>
 
 </html>

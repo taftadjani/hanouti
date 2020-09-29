@@ -1,0 +1,213 @@
+/* La partie caroussel */
+
+.slider-container {
+    margin: 0px auto;
+    width: 100%;
+    height: 350px;
+}
+
+
+/* Caroussel */
+
+.caroussel {
+    width: 100%;
+    height: 90%;
+    position: relative;
+}
+
+
+/* Slider */
+
+.caroussel .slider {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Section */
+
+.caroussel .slider .section {
+    position: absolute;
+    top: 0;
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+}
+
+.slider .section:nth-child(1) {
+    opacity: 1;
+    z-index: 1;
+    background-image: url(img/desk1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider .section:nth-child(2) {
+    background-image: url(img/desk2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider .section:nth-child(3) {
+    background-image: url(img/desk3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider .section:nth-child(4) {
+    background-image: url(img/desk4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider .section:nth-child(5) {
+    background-image: url(img/desk5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Les arrows */
+
+.caroussel .arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    z-index: 1;
+}
+
+.caroussel .arrows .arrow {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+}
+
+.caroussel .arrows .left {
+    margin-left: 30px;
+}
+
+.caroussel .arrows .right {
+    margin-right: 30px;
+}
+
+
+/* Les listes */
+
+.lines-controls {
+    margin-top: 20px;
+}
+
+.slider-container ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.slider-container ul li {
+    margin: 0px 10px 0px 10px;
+    background-color: #A6A7AC;
+    width: 2.5rem;
+    height: 0.25rem;
+    cursor: pointer;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.slider-container ul li.activated {
+    background-color: #FF6B15;
+}
+
+.caroussel .arrows span {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+}
+
+span.span-first {
+    justify-content: flex-start;
+}
+
+span.span-last {
+    justify-content: flex-end;
+}
+
+@media screen and (min-width:768px) {
+    .slider-container {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .slider-container {
+        height: 380px;
+    }
+    .caroussel .arrows .arrow {
+        width: 30px;
+        height: 30px;
+    }
+    .caroussel .arrows span {
+        opacity: 0;
+        transition: opacity 1s;
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -ms-transition: opacity 1s;
+        -o-transition: opacity 1s;
+    }
+    .caroussel .arrows span:hover {
+        opacity: 1;
+    }
+    .caroussel .arrows .left {
+        margin-left: 30px;
+    }
+    .caroussel .arrows .right {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .slider-container {
+        max-width: 1300px;
+        height: 400px;
+    }
+}
